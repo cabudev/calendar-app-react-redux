@@ -1,0 +1,80 @@
+.login-container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form-1 {
+    border-radius: 5px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    padding: 5%;
+    width: 500px;
+}
+
+.login-form-1 h3 {
+    text-align: center;
+    color: #333;
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+.login-form-2 {
+    border-radius: 5px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    padding: 5%;
+    background: #61DBFB;;
+    width: 500px;
+}
+
+.login-form-2 h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+.login-container form {
+    padding: 10%;
+    height: 350px;
+}
+
+.btnSubmit {
+    position: relative;
+    bottom: 0px;
+    border-radius: 1rem;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.login-form-1 .btnSubmit {
+    color: #fff;
+    background-color: #61DBFB;
+    margin-top: 2rem;
+    line-height: 1.8rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    width: 100%;
+}
+
+.login-form-2 .btnSubmit {
+    background-color: #fff;
+    line-height: 1.8rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    width: 100%;
+}
+
+.forgetPwd {
+    display: block;
+    color: grey;
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+}
+
+.forgetPwd:hover {
+    color: #0062cc;
+}

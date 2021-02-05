@@ -1,0 +1,298 @@
+$color-primary: #61DBFB;
+$color-link: #0062cc;
+
+html, body {
+    height: 100vh;
+}
+
+.vh-100{
+    height: 100vh;
+}
+
+.header{
+    width: 100%;
+    z-index: 1300
+}
+
+a{
+    color: white;
+    &:hover {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.btn-logout{
+    color: white;
+    width: 150px;
+    font-weight: 2rem;
+    border-color: white;
+    margin: 0 auto;
+}
+
+.btn-menu{
+    margin-left: 10px;
+    color: white;
+    border-radius: 50%;
+}
+
+.btn-menu>i{
+    line-height: 1.5;
+}
+
+.fab{
+    z-index: 1050;
+}
+
+.calendar-screen{
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
+    height: 100vh;
+    position: relative;
+    top: -56px;
+    padding-top: 50px;
+}
+
+.rbc-calendar {
+    height: 100%;
+    margin: 0 20px;
+}
+
+.circular--portrait {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+.portrait-s1 {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.portrait-s2 {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.edit-portrait{
+    display: block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin: 0 auto;
+    top: -20px;
+    left: 20px;
+    cursor: pointer;
+    &:hover {
+        color: #009fff;
+    }
+    i {
+        position: relative;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: white;
+    }
+}
+
+.circular--portrait img {
+    width: 100%;
+    height: auto;
+}
+
+.user-info {
+    text-align: center;
+    color: white;
+}
+
+/* NAVBAR PROFILE */
+.container-flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.nav-bar-profile {
+    display: flex;
+    position: relative;
+    padding-top: 15px;
+    width: 0px;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.nav-bar-profile-mob {
+    display: flex;
+    height: 600px;
+    right: 0;
+    top: 55px;
+    overflow: hidden;
+    position: absolute;
+    padding-top: 15px;
+    transition: width .5s;
+    width: 0px;
+    z-index: 1050;
+}
+
+.nav-bar-profile-open {
+    width: 350px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* MODAL */
+
+/* Modal */
+.ReactModalPortal > div{
+    opacity: 0;
+}
+
+.close-modal {
+    font-size: 2.5rem;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: opacity .2s ease-in-out;
+    z-index: 1300;
+}
+
+.modal-fondo {
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.modal {
+    background: white;
+    border-radius: 5px;
+    color: rgb(51, 51, 51);
+    display: inline;
+    max-height: 620px;
+    max-width: 500px;
+    outline: none;
+    padding: 10px;
+    position: relative;
+    overflow: overlay;
+}
+
+/* Datepicket */
+.react-datetime-picker input:focus {
+    outline: none;
+}
+
+.react-datetime-picker__wrapper {
+    display: flex;
+    border: 0px solid gray !important;
+}
+
+/** FABS **/
+
+.fab {
+    border-radius: 100%;
+    bottom: 25px;
+    font-size: 30px;
+    padding: 25px;
+    position: absolute;
+    right: 25px;
+    outline: none !important;
+}
+
+.fab:active{
+    border: 0px;
+}
+
+.fab-danger {
+    bottom: 35px;
+    padding: 10px;
+    position: absolute;
+    left: 75px;
+}
+
+/** FORGET PASSWORD - RESET PASSWORD FORM */
+
+.forget-password-container, .reset-password-container{
+    border-radius: 5px;
+    padding: 5%;
+    margin: 10px;
+    max-width: 600px;
+}
+
+.forget-password-container{
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+.forget-password-title{
+    margin-bottom: 30px;
+    font-size: 2.3rem;
+    font-weight: 300;    
+}
+
+.forget-password-description{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.forget-password-container input[type=email] {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.forget-password-container .btnSubmit{
+    background-color: $color-primary;
+    border-radius: 30px;
+    line-height: 1.8rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    width: 100%;
+}
+
+.forget-password-back-login {
+    display: block;
+    text-align: center;
+    color: grey;
+    font-size: 12px;
+}
+
+.forget-password-back-login:hover {
+    color: $color-link;
+}
+
+.reset-password-title{
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.reset-password-container .btnSubmit{
+    background-color: $color-primary;
+    line-height: 1.8rem;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    font-weight: 300;
+    width: 100%;
+}
